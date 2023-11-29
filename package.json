@@ -20,6 +20,9 @@
     "sqlite3": "^5.1.6"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "eslint-config-prettier": "^9.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "3.1.0",
+    "stylelint-config-prettier": "^9.0.5"
   }
 }
