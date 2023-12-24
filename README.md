@@ -10,6 +10,8 @@ Before you begin, ensure you have met the following requirements:
 
 - [Git](https://git-scm.com/downloads 'Download Git')
 - [Node.js LTS v20.9](https://nodejs.org/en 'Download Node.js LTS v20.9')
+- [Beekeeper Studio](https://www.beekeeperstudio.io/ 'Download Beekeeper Studio')
+- [Insomnia](https://insomnia.rest/download 'Doenload Insomnia')
 
 ### local dependencies
 
