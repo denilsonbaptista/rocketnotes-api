@@ -1,4 +1,4 @@
-## Explorer API
+## Rocket Notes API
 
 ### About
 
