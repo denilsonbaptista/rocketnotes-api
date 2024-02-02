@@ -1,0 +1,4 @@
+# Index orders
+
+GET  http://localhost:3333/tags/1
+Content-Type: application/json
