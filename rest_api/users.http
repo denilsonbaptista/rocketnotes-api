@@ -1,7 +1,10 @@
-# Create orders
+@resource = users
+@contentType = application/json
+@userId = 1
 
-POST http://localhost:3333/users
-Content-Type: application/json
+# Create orders
+POST {{baseUrl}}/{{resource}}
+Content-Type: {{contentType}}
 
 {
 	"name": "Denilson",
@@ -12,9 +15,8 @@ Content-Type: application/json
 ### 
 
 # Update orders
-
-PUT  http://localhost:3333/users/1
-Content-Type: application/json
+PUT  {{baseUrl}}/{{resource}}/{{userId}}
+Content-Type: {{contentType}}
 
 {
 	"name": "Denilson Baptista",

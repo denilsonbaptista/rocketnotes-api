@@ -1,0 +1,11 @@
+@resource = sessions
+@contentType = application/json
+
+# Create orders
+POST {{baseUrl}}/{{resource}}
+Content-Type: {{contentType}}
+
+{
+	"email": "denilson@email.com",
+	"password": "123"
+}
