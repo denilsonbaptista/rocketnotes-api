@@ -20,7 +20,10 @@ DELETE http://localhost:3333/notes/1
 
 # Index orders
 
-GET http://localhost:3333/notes?user_id=1&title&tags=node
+GET http://localhost:3333/notes
+		?user_id=1
+		&title
+		&tags=node
 
 ###
 
