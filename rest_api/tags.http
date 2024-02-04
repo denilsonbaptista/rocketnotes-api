@@ -1,7 +1,0 @@
-@resource = tags
-@contentType = application/json
-@userId = 1
-
-# Index orders
-GET  {{baseUrl}}/{{resource}}/{{userId}}
-Content-Type: {{contentType}}

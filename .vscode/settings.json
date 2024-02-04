@@ -1,8 +1,0 @@
-{
-  "rest-client.environmentVariables": {
-    "local": {
-      "baseUrl": "http://localhost:3333"
-    },
-    "production": {}
-  }
-}
