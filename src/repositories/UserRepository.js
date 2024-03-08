@@ -10,12 +10,12 @@ class UserRepository {
     return user;
   }
 
-  async create(name, email, passsword) {
+  async create({ name, email, password }) {
     const database = await sqliteConnection();
 
     const userId = await database.run(
       'INSERT INTO users (name, email, password) VALUES (?, ?, ?)',
-      [name, email, passsword],
+      [name, email, password],
     );
 
     return { id: userId };
