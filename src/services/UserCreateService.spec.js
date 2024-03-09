@@ -3,6 +3,14 @@ const UserRepositoryInMemory = require('../repositories/UserRepositoryInMemory')
 const AppError = require('../utils/AppError');
 
 describe('UserCreateService', () => {
+  let userRepositoryInMemory = null;
+  let userCreateService = null;
+
+  beforeEach(() => {
+    userRepositoryInMemory = new UserRepositoryInMemory();
+    userCreateService = new UserCreateService(userRepositoryInMemory);
+  });
+
   it('user should be create', async () => {
     const user = {
       name: 'User Test',
@@ -10,12 +18,7 @@ describe('UserCreateService', () => {
       password: '123456',
     };
 
-    const userRepositoryInMemory = new UserRepositoryInMemory();
-    const userCreateService = new UserCreateService(userRepositoryInMemory);
     const userCreated = await userCreateService.execute(user);
-
-    console.log(userCreated);
-
     expect(userCreated).toHaveProperty('id');
   });
 
@@ -31,9 +34,6 @@ describe('UserCreateService', () => {
       email: 'user@test.com',
       password: '<PASSWORD>',
     };
-
-    const userRepository = new UserRepositoryInMemory();
-    const userCreateService = new UserCreateService(userRepository);
 
     await userCreateService.execute(user1);
     expect(async () => {
